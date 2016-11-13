@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6a8ad6"
+    android:background="#abbfee"
     android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
@@ -37,6 +37,7 @@
         android:layout_gravity="center_horizontal"
         android:background="#021d34"
         android:text="START"
-        android:textColor="#ffffff" />
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
 
 </LinearLayout>
