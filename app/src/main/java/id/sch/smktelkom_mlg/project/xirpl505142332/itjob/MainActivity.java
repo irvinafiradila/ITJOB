@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.project.xirpl505142332.itjob;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,11 +20,8 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.buttonOk).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                doClick();
+                startActivity(new Intent("com.wew.ldua"));
             }
         });
-    }
-
-    private void doClick() {
     }
 }
