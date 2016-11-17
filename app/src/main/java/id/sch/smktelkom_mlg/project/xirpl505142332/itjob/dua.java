@@ -15,7 +15,7 @@ public class dua extends AppCompatActivity {
     Button bOk;
     RadioGroup rgGender;
     TextView tvHasil;
-    Spinner Bakat, Minat;
+    Spinner spBakat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,87 +26,41 @@ public class dua extends AppCompatActivity {
         Nama = (EditText) findViewById(R.id.editTextNama);
         Email = (EditText) findViewById(R.id.editTextEmail);
         Telp = (EditText) findViewById(R.id.editTextTelp);
-        Bakat = (Spinner) findViewById(R.id.spinBakat);
-        Minat = (Spinner) findViewById(R.id.spinMinat);
+        spBakat = (Spinner) findViewById(R.id.spinBakat);
         rgGender = (RadioGroup) findViewById(R.id.radioGroupGender);
         tvHasil = (TextView) findViewById(R.id.tvHasil);
         bOk = (Button) findViewById(R.id.bOK);
 
-        findViewById(R.id.bOK).setOnClickListener(new View.OnClickListener()
+        bOk.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                doClick();
-            }
-            private void doClick() {
-                String hasil = null;
+                String nama = Nama.getText().toString();
+                String email = Email.getText().toString();
+                String telp = Telp.getText().toString();
 
-                if(rgGender.getCheckedRadioButtonId() != -1){
-                    RadioButton rb = (RadioButton) findViewById(rgGender.getCheckedRadioButtonId());
-                    hasil = rb.getText().toString();
-                    if(hasil == null){
-                        tvHasil.setText("Anda belum memilih gender");
+
+                if (nama != null){
+                    if(email != null){
+                        if(telp != null){
+                            if(rgGender.getCheckedRadioButtonId()== -1){
+                                RadioButton rb = (RadioButton)
+                                        findViewById(rgGender.getCheckedRadioButtonId());
+                                tvHasil.setText(" Nama : " + nama
+                                        + "Email : " + email
+                                        + "Telp" + telp
+                                        + "Gender anda " + rb.getText().toString());
+                            }
+                        }else {
+                            Telp.setError("No Telepon belum diisi");
+                        }
                     }else{
-                        tvHasil.setText("Gender anda " + hasil);
+                        Email.setError("Email anda belum di isi");
                     }
+                }else {
+                    Nama.setError("Nama anda belum di isi");
                 }
             }
         });
-        bOk.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (isValid()) ;
-
-
-                String nama = Nama.getText().toString();
-                String telepon = "\n\n Email anda:";
-                int startlen = telepon.length();
-
-                tvHasil.setText(
-                        "\nNama Anda :" + Nama + Bakat.getSelectedItem().toString()
-                                + "\n\nBakat Anda:" + Bakat);
-            }
-        });
-    }
-
-    private boolean isValid() {
-
-        boolean valid = true;
-
-        String email = Email.getText().toString();
-        String Telepon = Telp.getText().toString();
-        String nama = Nama.getText().toString();
-
-
-        if (nama.isEmpty()) {
-            Nama.setError("Nama Kosong");
-            valid = false;
-        } else if (nama.length() < 8) {
-            Nama.setError("Minimal 8 Karakter");
-            valid = false;
-        } else {
-            Nama.setError(null);
-        }
-        if (email.isEmpty()) {
-            Email.setError("e-Mail Belum Diisi");
-            valid = false;
-        } else if (email.length() < 4) {
-            Email.setError("Format Salah");
-            valid = false;
-        } else {
-            Email.setError(null);
-        }
-        if (Telepon.isEmpty()) {
-            Telp.setError("Kata Sandi Kosong");
-            valid = false;
-        } else if (Telp.length() < 8) {
-            Telp.setError("Isi dengan benar");
-            valid = false;
-        }
-        return valid;
-    }
-
-
-}
-
+    }}
