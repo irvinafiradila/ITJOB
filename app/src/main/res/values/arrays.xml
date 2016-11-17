@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Bakat">
+        <item>Arsitektur IT</item>
+        <item>Pemrograman</item>
+        <item>HelpDesk</item>
+        <item>Analytics</item>
+        <item>Administrasi Database</item>
+        <item>Ahli Keamanan TI</item>
+        <item>Web Development</item>
+    </string-array>
+</resources>
