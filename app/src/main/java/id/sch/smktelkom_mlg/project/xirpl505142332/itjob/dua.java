@@ -13,6 +13,7 @@ import android.widget.TextView;
 public class dua extends AppCompatActivity {
     EditText Nama, Email, Telp;
     Button bOk;
+    RadioButton rbPria, rbWanita;
     RadioGroup rgGender;
     TextView tvHasil;
     Spinner spBakat;
@@ -27,40 +28,59 @@ public class dua extends AppCompatActivity {
         Email = (EditText) findViewById(R.id.editTextEmail);
         Telp = (EditText) findViewById(R.id.editTextTelp);
         spBakat = (Spinner) findViewById(R.id.spinBakat);
+        rbPria = (RadioButton) findViewById(R.id.Pria);
+        rbWanita = (RadioButton) findViewById(R.id.Wanita);
         rgGender = (RadioGroup) findViewById(R.id.radioGroupGender);
         tvHasil = (TextView) findViewById(R.id.tvHasil);
         bOk = (Button) findViewById(R.id.bOK);
 
-        bOk.setOnClickListener(new View.OnClickListener()
-        {
+        bOk.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                String nama = Nama.getText().toString();
-                String email = Email.getText().toString();
-                String telp = Telp.getText().toString();
-
-
-                if (nama != null){
-                    if(email != null){
-                        if(telp != null){
-                            if(rgGender.getCheckedRadioButtonId()== -1){
-                                RadioButton rb = (RadioButton)
-                                        findViewById(rgGender.getCheckedRadioButtonId());
-                                tvHasil.setText(" Nama : " + nama
-                                        + "Email : " + email
-                                        + "Telp" + telp
-                                        + "Gender anda " + rb.getText().toString());
-                            }
-                        }else {
-                            Telp.setError("No Telepon belum diisi");
-                        }
-                    }else{
-                        Email.setError("Email anda belum di isi");
-                    }
-                }else {
-                    Nama.setError("Nama anda belum di isi");
-                }
+            public void onClick(View view) {
+                doProcess();
             }
         });
-    }}
+    }
+
+    private void doProcess() {
+        if (isValid()) {
+            String hasil = null;
+            String nama = Nama.getText().toString();
+            String email = Email.getText().toString();
+            String telp = Telp.getText().toString();
+        }
+
+
+    }
+
+    private boolean isValid() {
+
+        boolean valid = true;
+
+        String nama = Nama.getText().toString();
+        String email = Email.getText().toString();
+        String telp = Telp.getText().toString();
+
+        if (nama.isEmpty()) {
+            Nama.setError("Nama Belum Diisi");
+            valid = false;
+        } else {
+            Nama.setError(null);
+            }
+        if (email.isEmpty()) {
+            Email.setError("Email Belum Diisi");
+            valid = false;
+        } else {
+            Email.setError(null);
+        }
+        if (telp.isEmpty()) {
+            Telp.setError("Nomer Telepon Belum Diisi");
+            valid = false;
+        } else {
+            Telp.setError(null);
+        }
+
+
+        return valid;
+    }
+}

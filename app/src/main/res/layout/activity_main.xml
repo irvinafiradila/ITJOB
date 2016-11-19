@@ -36,6 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:background="#021d34"
+        android:clickable="true"
         android:text="START"
         android:textColor="#ffffff"
         android:textStyle="bold" />
