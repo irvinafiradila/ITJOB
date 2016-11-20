@@ -2,7 +2,7 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-     android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:background="#abbfee">
 <LinearLayout
     android:layout_width="match_parent"
@@ -16,108 +16,134 @@
         android:layout_height="120dp"
         android:layout_gravity="center_horizontal"
         android:src="@drawable/itjob" />
-
-    <TextView
-            android:id="@+id/Nama"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Nama"
-            android:textColor="#000000" />
-
-
-    <EditText
-        android:id="@+id/editTextNama"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+        <TextView
+            android:id="@+id/Nama"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:text="Nama"
+            android:textColor="#000000"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+
+        <EditText
+            android:id="@+id/editTextNama"
+            android:layout_width="300dp"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
 
     <TextView
         android:id="@+id/Email"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
         android:text="Email"
-        android:textColor="#000000" />
+        android:textColor="#000000"
+        android:textAlignment="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
 
     <EditText
         android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:layout_gravity="center_horizontal"
         android:ems="10"
         android:inputType="textEmailAddress" />
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/activity_vertical_margin">
 
     <TextView
-            android:id="@+id/Telp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:text="No Telepon"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:textColor="#000000" />
+        android:id="@+id/Telp"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:text="No Telepon"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"/>
 
     <EditText
         android:id="@+id/editTextTelp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:ems="10"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
         android:inputType="phone" />
+</LinearLayout>
 
-    <TextView
-        android:id="@+id/Gender"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="Gender"
-        android:textAlignment="center"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:textColor="#000000" />
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/activity_vertical_margin">
 
-    <RadioGroup
-        android:id="@+id/radioGroupGender"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal|bottom"
-        android:gravity="center_horizontal"
-        android:textAlignment="center">
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textAlignment="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#000000" />
 
-
-        <RadioButton
-        android:id="@+id/Pria"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:checked="false"
-            android:gravity="center"
-            android:text="Pria"
-            android:textColor="@color/abc_primary_text_material_light" />
-
-        <RadioButton
-            android:id="@+id/Wanita"
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
-            android:checked="false"
-            android:text="Wanita"
-            android:textAlignment="center"
-            android:textColor="@color/abc_primary_text_material_light" />
-    </RadioGroup>
+            android:layout_gravity="center_horizontal|bottom"
+            android:gravity="center_horizontal"
+            android:textAlignment="center">
+
+
+            <RadioButton
+                android:id="@+id/Pria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:gravity="center"
+                android:text="Pria"
+                android:textColor="@color/abc_primary_text_material_light" />
+
+            <RadioButton
+                android:id="@+id/Wanita"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:checked="false"
+                android:text="Wanita"
+                android:textAlignment="center"
+                android:textColor="@color/abc_primary_text_material_light" />
+        </RadioGroup>
+
+    </LinearLayout>
 
     <Button
         android:id="@+id/bOK"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin"
         android:layout_gravity="center_horizontal"
         android:background="#070941"
         android:text="Submit"
         android:textColor="#ffffff" />
-
-    <TextView
-        android:id="@+id/tvHasil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal" />
-
 </LinearLayout>
 </ScrollView>
