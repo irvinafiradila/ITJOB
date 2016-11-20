@@ -1,5 +1,6 @@
 package id.sch.smktelkom_mlg.project.xirpl505142332.itjob;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -7,7 +8,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Spinner;
 import android.widget.TextView;
 
 public class dua extends AppCompatActivity {
@@ -16,7 +16,6 @@ public class dua extends AppCompatActivity {
     RadioButton rbPria, rbWanita;
     RadioGroup rgGender;
     TextView tvHasil;
-    Spinner spBakat;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +26,6 @@ public class dua extends AppCompatActivity {
         Nama = (EditText) findViewById(R.id.editTextNama);
         Email = (EditText) findViewById(R.id.editTextEmail);
         Telp = (EditText) findViewById(R.id.editTextTelp);
-        spBakat = (Spinner) findViewById(R.id.spinBakat);
         rbPria = (RadioButton) findViewById(R.id.Pria);
         rbWanita = (RadioButton) findViewById(R.id.Wanita);
         rgGender = (RadioGroup) findViewById(R.id.radioGroupGender);
@@ -38,13 +36,13 @@ public class dua extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 doProcess();
+                startActivity(new Intent("com.wew.ltiga"));
             }
         });
     }
 
     private void doProcess() {
         if (isValid()) {
-            String hasil = null;
             String nama = Nama.getText().toString();
             String email = Email.getText().toString();
             String telp = Telp.getText().toString();
