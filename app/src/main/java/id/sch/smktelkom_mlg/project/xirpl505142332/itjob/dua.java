@@ -75,7 +75,6 @@ public class dua extends AppCompatActivity {
             Telp.setError(null);
         }
 
-
         return valid;
     }
 }
