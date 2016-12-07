@@ -22,34 +22,57 @@ Penjelasan Aplikasi :
 ![8.png](https://github.com/irvinafiradila/itjob/blob/master/8.png)
 
 
+https://drive.google.com/drive/u/0/folders/0B5ZhP0FU4Ll1Qkp1RXRiTm9fTE0
+
+
 Anggota Kelompok :
 1. Nama       : Aulina R.J
+
    Kelas      : XIRPL5
+   
    No.urut    : 05
+   
    NIS        :
+   
    Nama User  : aulinarj
+   
    Nama Sekolah : SMK TELKOM MALANG
    
    
 2. Nama       : Irvina Firadila
+
    Kelas      : XIRPL5
+   
    No.urut    : 14
+   
    NIS        : 4727/1446.070
+   
    Nama User  : irvinafiradila
+   
    Nama Sekolah : SMK TELKOM MALANG
    
    
 3. Nama       : Naufal Dwi Prakoso
+
    Kelas      : XIRPL5
+   
    No.urut    : 23
+   
    NIS        :
+   
    Nama User  : naufaldwi
+   
    Nama Sekolah : SMK TELKOM MALANG
    
    
 4. Nama       :Sheila Indri R.P
+
    Kelas      : XIRPL5
+   
    No.urut    : 32
+   
    NIS        :
+   
    Nama User  : sheilaindrirp
+   
    Nama Sekolah : SMK TELKOM MALANG
