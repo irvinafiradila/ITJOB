@@ -22,10 +22,15 @@ Penjelasan Aplikasi :
 ![8.png](https://github.com/irvinafiradila/itjob/blob/master/8.png)
 
 
+
 https://drive.google.com/drive/u/0/folders/0B5ZhP0FU4Ll1Qkp1RXRiTm9fTE0
 
 
+https://drive.google.com/drive/u/0/folders/0B5ZhP0FU4Ll1NUFRcW91YUR4Z3M
+
 Anggota Kelompok :
+
+
 1. Nama       : Aulina R.J
 
    Kelas      : XIRPL5
