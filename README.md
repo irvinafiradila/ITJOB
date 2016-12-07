@@ -29,18 +29,24 @@ Anggota Kelompok :
    NIS        :
    Nama User  : aulinarj
    Nama Sekolah : SMK TELKOM MALANG
+   
+   
 2. Nama       : Irvina Firadila
    Kelas      : XIRPL5
    No.urut    : 14
    NIS        : 4727/1446.070
    Nama User  : irvinafiradila
    Nama Sekolah : SMK TELKOM MALANG
+   
+   
 3. Nama       : Naufal Dwi Prakoso
    Kelas      : XIRPL5
    No.urut    : 23
    NIS        :
    Nama User  : naufaldwi
    Nama Sekolah : SMK TELKOM MALANG
+   
+   
 4. Nama       :Sheila Indri R.P
    Kelas      : XIRPL5
    No.urut    : 32
