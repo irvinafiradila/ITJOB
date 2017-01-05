@@ -21,6 +21,8 @@ Penjelasan Aplikasi :
 ![7.png](https://github.com/irvinafiradila/itjob/blob/master/7.png)
 ![8.png](https://github.com/irvinafiradila/itjob/blob/master/8.png)
 
+https://www.youtube.com/watch?v=BttJFXsZRDo&feature=youtu.be
+
 https://drive.google.com/drive/folders/0B5ZhP0FU4Ll1Qkp1RXRiTm9fTE0?usp=sharing
 
 Anggota Kelompok :
