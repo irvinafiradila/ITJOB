@@ -21,14 +21,7 @@ Penjelasan Aplikasi :
 ![7.png](https://github.com/irvinafiradila/itjob/blob/master/7.png)
 ![8.png](https://github.com/irvinafiradila/itjob/blob/master/8.png)
 
-
-
-https://drive.google.com/drive/u/0/folders/0B5ZhP0FU4Ll1Qkp1RXRiTm9fTE0
-
-
-https://drive.google.com/drive/u/0/folders/0B5ZhP0FU4Ll1NUFRcW91YUR4Z3M
-
-
+https://drive.google.com/drive/folders/0B5ZhP0FU4Ll1Qkp1RXRiTm9fTE0?usp=sharing
 
 Anggota Kelompok :
 
